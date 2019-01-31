@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Card from './Card';
 import * as serviceWorker from './serviceWorker';
+import 'tachyons';
 
-ReactDOM.render(<h1>Hello World</h1>, document.getElementById('root'));
+const createBots = (count) => {
+    let cards = [];
+    for(let i = 0; i < count; i++){
+        cards.push(<Card image={`https://robohash.org/${i}?200x200`}
+                        name={i}
+                        email={`${i}@fakeemail.com`} />);
+    }
+    console.log(cards);
+    return cards;
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
+ReactDOM.render(<div>{createBots(10)}</div>, document.getElementById('root'));
 serviceWorker.unregister();
