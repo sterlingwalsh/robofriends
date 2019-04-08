@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/sterlingwalsh/robofriends/tree/gh-pages/precache-manifest.06aeed6e87042ca6f39269050be2e1cd.js"
+  "./tree/gh-pages/precache-manifest.80c44d51e35602e5eb2277c9c3965224.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/sterlingwalsh/robofriends/tree/gh-pages/index.html", {
+workbox.routing.registerNavigationRoute("./tree/gh-pages/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
