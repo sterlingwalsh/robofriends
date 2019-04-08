@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 class SearchBox extends Component{
     render(){
-        const {searchfield, searchChange} = this.props;
+        const {searchChange} = this.props;
         return(
             <div className='pa2'>
                 <input 
