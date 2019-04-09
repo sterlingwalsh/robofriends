@@ -10,6 +10,7 @@ class SearchBox extends Component{
                     type='search'
                     placeholder='Search Robots'
                     onChange={searchChange}
+                    aria-label="search"
                 />
             </div>
         );
